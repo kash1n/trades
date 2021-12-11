@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        String pathToFile = "/home/kostantin/trades.txt";
+        String pathToFile = args[0]; //"/home/kostantin/trades.txt";
 
         try (Stream<String> stream = Files.lines(Paths.get(pathToFile))) {
 
